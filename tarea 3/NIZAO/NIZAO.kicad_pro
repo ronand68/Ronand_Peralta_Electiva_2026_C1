@@ -408,6 +408,19 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "02cf9799-02a7-405e-973c-e989305c6b7d",
+      "Root"
+    ],
+    [
+      "a351403f-f255-4be6-b82d-8c5a977ae079",
+      "BoardNIZAO"
+    ],
+    [
+      "425a24bd-d500-4e6b-b3a4-d9c7a4f2c577",
+      "PawerSupply"
+    ]
+  ],
   "text_variables": {}
 }
