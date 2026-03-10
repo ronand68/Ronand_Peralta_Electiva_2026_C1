@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 25,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -8,12 +8,12 @@
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
-      "images": 0.6000000238418579,
+      "images": 0.6,
       "pads": 1.0,
       "shapes": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
-      "zones": 0.3199999928474426
+      "zones": 0.6
     },
     "selection_filter": {
       "dimensions": true,
@@ -50,7 +50,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffff7f_ffffffef",
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -59,13 +59,11 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "NIZAO.kicad_prl",
+    "filename": "NIZAO_Board_Vertical.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
     "col_hidden": [
-      false,
-      false,
       false,
       false,
       false,
@@ -87,9 +85,7 @@
       6,
       7,
       8,
-      9,
-      10,
-      11
+      9
     ],
     "col_widths": [
       222,
@@ -100,8 +96,6 @@
       154,
       153,
       155,
-      136,
-      136,
       136,
       136
     ],
