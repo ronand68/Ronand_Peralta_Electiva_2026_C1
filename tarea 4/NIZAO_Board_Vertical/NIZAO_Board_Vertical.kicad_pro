@@ -490,7 +490,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "NIZAO_Board_Vertical.step",
       "svg": "",
       "vrml": ""
     },
@@ -613,10 +613,6 @@
     [
       "d66ece06-f1c0-4ab4-80d8-9b437a149ff1",
       "Root"
-    ],
-    [
-      "84c6822e-f17e-44e7-985d-a37a12d14779",
-      "NIZAO_Board_Vertical"
     ]
   ],
   "text_variables": {}
