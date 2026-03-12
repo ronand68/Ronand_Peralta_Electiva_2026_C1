@@ -256,6 +256,281 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "EasyEDA:AT3H4B-CUH-S"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AT3H4B-CUH-S"
+				(at 0 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "EasyEDA:SSOP-4_L2.7-W4.6-P1.27-LS7.0-TL"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C20612635"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AT3H4B-CUH-S_0_1"
+				(rectangle
+					(start 5.08 0)
+					(end 25.4 -15.24)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 10.16 -2.54) (xy 10.16 -12.7) (xy 5.08 -12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 -6.35) (xy 11.43 -6.35) (xy 10.16 -8.89) (xy 8.89 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 -8.89) (xy 11.43 -8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 12.7 -2.54) (xy 12.7 -12.7) (xy 10.16 -12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 13.97 -6.35) (xy 11.43 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 13.97 -8.89) (xy 11.43 -8.89) (xy 12.7 -6.35) (xy 13.97 -8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 17.78 -5.08) (xy 17.78 -10.16)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 17.78 -8.89) (xy 21.59 -11.43) (xy 21.59 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 21.59 -11.43) (xy 20.32 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 21.59 -11.43) (xy 21.59 -12.7) (xy 25.4 -12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 25.4 -2.54) (xy 21.59 -2.54) (xy 21.59 -3.81) (xy 17.78 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "AN/CAT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -12.7 0)
+					(length 5.08)
+					(name "CAT/AN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 30.48 -2.54 180)
+					(length 5.08)
+					(name "COL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 30.48 -12.7 180)
+					(length 5.08)
+					(name "EM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Resistor_US_AKL:R_0603"
 			(pin_numbers
 				(hide yes)
@@ -558,283 +833,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "easyeda2kicad:AT3H4B-CUH-S"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AT3H4B-CUH-S"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "easyeda2kicad:SSOP-4_L2.7-W4.6-P1.27-LS7.0-TL"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part" "C20612635"
-				(at 0 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AT3H4B-CUH-S_0_1"
-				(rectangle
-					(start -10.16 7.62)
-					(end 10.16 -7.62)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.16 5.08) (xy -5.08 5.08) (xy -5.08 -5.08) (xy -10.16 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 1.27) (xy -3.81 1.27) (xy -5.08 -1.27) (xy -6.35 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -1.27) (xy -3.81 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy -2.54 5.08) (xy -2.54 -5.08) (xy -5.08 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -3.81 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -3.81 -1.27) (xy -2.54 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -1.52) (xy 5.84 -3.81) (xy 5.59 -3.05)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.84 -3.81) (xy 5.08 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.84 -3.81) (xy 5.84 -5.08) (xy 10.16 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 5.08) (xy 5.84 5.08) (xy 5.84 3.56) (xy 2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "AT3H4B-CUH-S_1_1"
-				(pin unspecified line
-					(at -15.24 5.08 0)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -15.24 -5.08 0)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 5.08 180)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 15.24 -5.08 180)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1352,6 +1350,109 @@
 		(uuid "cc274d28-b9e3-40e3-bfde-1f0b90fa4e11")
 	)
 	(symbol
+		(lib_id "EasyEDA:AT3H4B-CUH-S")
+		(at 142.24 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e63476c-0521-47f8-bc1c-5b93adfea029")
+		(property "Reference" "U19"
+			(at 157.48 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AT3H4B-CUH-S"
+			(at 157.48 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EasyEDA:SSOP-4_L2.7-W4.6-P1.27-LS7.0-TL"
+			(at 142.24 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C20612635"
+			(at 142.24 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "0cdf3865-77bc-468f-a2f0-a247aea36963")
+		)
+		(pin "2"
+			(uuid "e2d1cc6e-7784-4ed1-b950-2484d5cb0cef")
+		)
+		(pin "1"
+			(uuid "cab58be9-5817-479a-a7dd-6ad84c278ebf")
+		)
+		(pin "3"
+			(uuid "a127166f-bb84-4bdd-92d8-9c5e2e61537f")
+		)
+		(instances
+			(project ""
+				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/15471b0f-f04d-42c9-8427-33bf677c8fd1"
+					(reference "U23")
+					(unit 1)
+				)
+				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/42636844-d0a6-4ffb-afef-be78e472d752"
+					(reference "U24")
+					(unit 1)
+				)
+				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/7cb4a06e-4fbf-4d1a-a1d1-1bcc1b82ebea"
+					(reference "U22")
+					(unit 1)
+				)
+				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/e33c5eef-b54a-45c3-ba67-23bd220a82f1"
+					(reference "U21")
+					(unit 1)
+				)
+				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/f009e054-4e5b-4f71-b730-946c3e9efa14"
+					(reference "U19")
+					(unit 1)
+				)
+				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/f9d16392-2495-49bb-b65f-6cb01a6522f8"
+					(reference "U20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Capacitor_AKL:C_0603")
 		(at 121.92 107.95 0)
 		(unit 1)
@@ -1612,108 +1713,6 @@
 				)
 				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/f9d16392-2495-49bb-b65f-6cb01a6522f8"
 					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "easyeda2kicad:AT3H4B-CUH-S")
-		(at 157.48 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6fb45920-ec0b-4f97-ac81-c744eb4f05b4")
-		(property "Reference" "U5"
-			(at 157.48 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AT3H4B-CUH-S"
-			(at 157.48 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "AOTE AT3H4B-CuH-S:SSOP-4_L2.7-W4.6-P1.27-LS7.0-TL"
-			(at 157.48 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 157.48 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C20612635"
-			(at 157.48 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "700834d7-a87a-4fb1-b30a-d09e0b467bd4")
-		)
-		(pin "2"
-			(uuid "0bf33c2d-042f-47e6-b200-c2cf38d9f34a")
-		)
-		(pin "3"
-			(uuid "f1a17326-f4f2-4bd1-ae11-022b71e0682c")
-		)
-		(pin "4"
-			(uuid "469914f0-d6bd-4024-97c8-e7617fe12f4a")
-		)
-		(instances
-			(project "NIZAO"
-				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/15471b0f-f04d-42c9-8427-33bf677c8fd1"
-					(reference "U9")
-					(unit 1)
-				)
-				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/42636844-d0a6-4ffb-afef-be78e472d752"
-					(reference "U10")
-					(unit 1)
-				)
-				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/7cb4a06e-4fbf-4d1a-a1d1-1bcc1b82ebea"
-					(reference "U8")
-					(unit 1)
-				)
-				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/e33c5eef-b54a-45c3-ba67-23bd220a82f1"
-					(reference "U7")
-					(unit 1)
-				)
-				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/f009e054-4e5b-4f71-b730-946c3e9efa14"
-					(reference "U5")
-					(unit 1)
-				)
-				(path "/02cf9799-02a7-405e-973c-e989305c6b7d/a351403f-f255-4be6-b82d-8c5a977ae079/f9d16392-2495-49bb-b65f-6cb01a6522f8"
-					(reference "U6")
 					(unit 1)
 				)
 			)
