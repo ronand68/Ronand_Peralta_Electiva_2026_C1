@@ -1,4 +1,4 @@
-27259797564507413
+27268664785028634
 AOTE AT3H4B-CuH-S
 SSOP-4_L2.7-W4.6-P1.27-LS7.0-TL
 
@@ -62244,6 +62244,27 @@ Untitled
 0
 0
 EasyEDA
+FPC-SMD_30P-P0.50_FPC-05FB-30PH20
+
+
+0
+32
+32
+EasyEDA
+HDR-TH_14P-P2.54-H-M-R2-C7-S2.54
+
+
+0
+14
+14
+EasyEDA
+HDR-TH_16P-P2.54-H-M-R2-C8-S2.54
+
+
+0
+16
+16
+EasyEDA
 SOT-23_L2.9-W1.3-P1.90-LS2.4-BR
 
 
@@ -62258,12 +62279,26 @@ SSOP-4_L2.7-W4.6-P1.27-LS7.0-TL
 4
 4
 EasyEDA
+TF-SMD_TF-115
+
+
+0
+15
+13
+EasyEDA
 TQFN-16_L3.0-W3.0-P0.50-BL-EP1.5
 
 
 0
 17
 17
+EasyEDA
+USB-C-SMD_HANBO_MC-121-L119
+
+
+0
+18
+13
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
