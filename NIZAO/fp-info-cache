@@ -1,18 +1,4 @@
-27268664785028634
-AOTE AT3H4B-CuH-S
-SSOP-4_L2.7-W4.6-P1.27-LS7.0-TL
-
-
-0
-4
-4
-AOTE AT3H4B-CuH-S
-Untitled
-
-
-0
-0
-0
+27220792991174756
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -27,13 +13,6 @@ audio belton reverb
 0
 7
 7
-BL BL0942
-SSOP-10_L4.9-W3.9-P1.00-LS6.0-BL
-
-
-0
-10
-10
 Battery
 BatteryClip_Keystone_54_D16-19mm
 Battery clip for batteries with a diameter between 16-19 mm: https://www.keyelco.com/product.cfm/product_id/826
@@ -60192,20 +60171,6 @@ ceramic
 0
 3
 3
-DIODES 1N5819HW-7-F
-SOD-123_L2.7-W1.6-LS3.7-RD
-
-
-0
-2
-2
-DIODES BAT54S-7-F
-SOT-23_L2.9-W1.3-P1.90-LS2.4-BR
-
-
-0
-3
-3
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -62229,76 +62194,6 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
-EVISUN B0303S-1WR3
-PWRM-TH_BXXXXS-1WR3
-
-
-0
-4
-4
-EVISUN B0303S-1WR3
-Untitled
-
-
-0
-0
-0
-EasyEDA
-FPC-SMD_30P-P0.50_FPC-05FB-30PH20
-
-
-0
-32
-32
-EasyEDA
-HDR-TH_14P-P2.54-H-M-R2-C7-S2.54
-
-
-0
-14
-14
-EasyEDA
-HDR-TH_16P-P2.54-H-M-R2-C8-S2.54
-
-
-0
-16
-16
-EasyEDA
-SOT-23_L2.9-W1.3-P1.90-LS2.4-BR
-
-
-0
-3
-3
-EasyEDA
-SSOP-4_L2.7-W4.6-P1.27-LS7.0-TL
-
-
-0
-4
-4
-EasyEDA
-TF-SMD_TF-115
-
-
-0
-15
-13
-EasyEDA
-TQFN-16_L3.0-W3.0-P0.50-BL-EP1.5
-
-
-0
-17
-17
-EasyEDA
-USB-C-SMD_HANBO_MC-121-L119
-
-
-0
-18
-13
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -63377,13 +63272,6 @@ GDT 3R-6
 0
 3
 3
-Guestgood GP8211S-TC50-EW
-ESOP-8_L4.9-W3.9-P1.27-LS6.0-BL-EP
-
-
-0
-9
-9
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -70454,13 +70342,6 @@ THT
 0
 4
 2
-Infineon BTS723GW
-SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL
-
-
-0
-14
-14
 Jumper
 Jumper_Harwin_S1621_P10.9mm
 Harwin SMD jumper link, 12.3x2.3mm, 1.8mm height, 10.9mm pad pitch, https://cdn.harwin.com/pdfs/S1621R.pdf
@@ -70671,13 +70552,6 @@ solder jumper open
 0
 3
 3
-LANKE LK1802
-SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR
-
-
-0
-6
-6
 LED_SMD
 LED-APA102-2020
 http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf
@@ -71931,13 +71805,6 @@ Yellow 5381 Series LED
 0
 2
 2
-MAXIM MAX31856MUD+
-TSSOP-14_L5.0-W4.4-P0.65-LS6.4-BL
-
-
-0
-14
-14
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -74787,13 +74654,6 @@ threaded screw
 0
 4
 1
-NCE NCE60P04R
-SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR
-
-
-0
-4
-4
 NetTie
 NetTie-2_SMD_Pad0.5mm
 Net tie, 2 pin, 0.5mm square SMD pads
@@ -96473,13 +96333,6 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
-RS485-PROTECT
-RS-485-PROTECT
-
-
-0
-8
-8
 Relay_SMD
 Relay_2P2T_10x6mm_TE_IMxxG
 Signal Relay, 10x6mm, 2 Form C, Gull Wings, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F108-98001%7FZ.1%7Fpdf%7FEnglish%7FENG_DS_108-98001_Z.1.pdf
@@ -98804,13 +98657,6 @@ rotary encoder illuminated switch vertical
 0
 9
 8
-SMF3.3_SODFL3718X108N
-SMF3.3_SODFL3718X108N
-
-
-0
-2
-2
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
@@ -100918,13 +100764,6 @@ Logo WEEE
 0
 0
 0
-TI ISO7021DR
-SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL
-
-
-0
-8
-8
 TerminalBlock
 TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm
 terminal block MaiXu MX126-5.0-02P, 2 pins, pitch 5mm, size 10.5x7.8mm, drill diameter 1.3mm, pad diameter 2.8mm, https://www.lcsc.com/datasheet/lcsc_datasheet_2309150913_MAX-MX126-5-0-03P-GN01-Cu-S-A_C5188435.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_MaiXu
@@ -108065,38 +107904,10 @@ Varistor VF
 0
 2
 2
-XFCN PZ254R-12-14P
-HDR-TH_14P-P2.54-H-M-R2-C7-S2.54
-
-
-0
-14
-14
-XUNPU TS-1088-AR02016
-SW-SMD_L3.9-W3.0-P4.45
-
-
+lcsc_footprints
+C67625_SOIC-14_L8_7-W3_9-P1_27-LS6_0-BL
+SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL
+SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL LCSC:C67625
 0
 2
 2
-easyeda2kicad
-HDR-TH_14P-P2.54-H-M-R2-C7-S2.54
-
-
-0
-14
-14
-easyeda2kicad
-SIM-SMD_SMC-202-6
-
-
-0
-10
-10
-easyeda2kicad
-USB-C-SMD_LCK-TCF809-L117YL-G1
-
-
-0
-18
-16
