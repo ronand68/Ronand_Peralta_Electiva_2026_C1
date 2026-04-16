@@ -1,6 +1,6 @@
-Solid Edge Translation to STEP
-Date: jueves,marzo 12,2026 12:47p. m.
-Output File: C:\Users\Roand\Desktop\Ronand\ITLA\Ronand_Peralta_Electiva_2026_C1\tarea 2\SoidEdge\Tapa Del Case Plastico.stp
+STEP translation to Solid Edge
+Date: jueves,abril 16,2026 10:12a. m.
+Source File: C:\Users\Roand\Desktop\Ronand\ITLA\Ronand_Peralta_Electiva_2026_C1\tarea 2\SoidEdge\Tapa Del Case Plastico.stp
 Author: Unknown
 Organization: Unknown
 Source System: Solid Edge
@@ -16,16 +16,28 @@ PSBodyShop Version: 38.0.111
 Step Adapter Version: 1700.0.0
 Solid Edge Version: 226.00.01.004 x64
 
-STEP Export Options
-Export Format: AP214
-Export Construction Sheets: Off
-Export Construction Solids: Off
-Export Construction Wires: Off
-Export Displayed Parts Only: Off
-Export Units: Millimeters
-Export Part Component Names As Unicode: Off
-Export PMI: Off
+Step Import Options
+Import Faceted Bodies: On
+Import Check Bodies: Off
+Import Curves: On
+Import DoNotSave: On
+Import Multiple Bodies As Single Part File: On
+Import Optimize:Off
+Import Stitch Surfaces: On
+Import Boolean Solids: On
+Make Base Feature: On
+Simplify Geometry: On
+Import Imprint Curves: On
+Import Drive: C:
+Import Stitch Surfaces: On
+Import Surfaces: On
+Import Output Path: C:\Users\Roand\Desktop\Ronand\ITLA\Ronand_Peralta_Electiva_2026_C1\tarea 2\SoidEdge
+Import Enable Default Output Path: On
+Import PMI: Off
+Import As Internal Components: Off
+Import Path: 
 
-Phase 1 of 1 Translating Parasolid to foreign data types...
+Translating to Parasolid data types...
+Placing C:\Users\Roand\Desktop\Ronand\ITLA\Ronand_Peralta_Electiva_2026_C1\tarea 2\SoidEdge\Tapa Del Case Plastico_0.par
 Translation process completed
-Time required to translate:00 : 00 : 00
+Total time required to translate and post process:00 : 00 : 02
