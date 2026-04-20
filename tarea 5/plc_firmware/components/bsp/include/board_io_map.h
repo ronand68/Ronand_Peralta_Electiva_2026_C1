@@ -1,0 +1,34 @@
+#ifndef BOARD_IO_MAP_H
+#define BOARD_IO_MAP_H
+
+#include "driver/gpio.h"
+
+/* I2C */
+#define BOARD_I2C_PORT       0
+#define BOARD_I2C_SDA_GPIO   GPIO_NUM_17
+#define BOARD_I2C_SCL_GPIO   GPIO_NUM_18
+#define BOARD_I2C_FREQ_HZ    400000
+
+/* RS485 */
+#define BOARD_RS485_RX_GPIO  GPIO_NUM_8
+#define BOARD_RS485_TX_GPIO  GPIO_NUM_9
+
+/* Entradas digitales */
+#define BOARD_DI_NPN1_GPIO   GPIO_NUM_1
+#define BOARD_DI_NPN2_GPIO   GPIO_NUM_2
+#define BOARD_DI_NPN3_GPIO   GPIO_NUM_3
+#define BOARD_DI_NPN4_GPIO   GPIO_NUM_4
+#define BOARD_DI_PNP1_GPIO   GPIO_NUM_5
+#define BOARD_DI_PNP2_GPIO   GPIO_NUM_6
+
+/* Salidas digitales */
+#define BOARD_DO_NPN1_GPIO   GPIO_NUM_35
+#define BOARD_DO_NPN2_GPIO   GPIO_NUM_36
+#define BOARD_DO_NPN3_GPIO   GPIO_NUM_37
+#define BOARD_DO_NPN4_GPIO   GPIO_NUM_38
+#define BOARD_DO_RLY1_GPIO   GPIO_NUM_41
+#define BOARD_DO_RLY2_GPIO   GPIO_NUM_42
+#define BOARD_DO_PNP1_GPIO   GPIO_NUM_46
+#define BOARD_DO_PNP2_GPIO   GPIO_NUM_47
+
+#endif
