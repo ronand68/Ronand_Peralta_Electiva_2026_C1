@@ -17,5 +17,7 @@ typedef struct {
 esp_err_t drv_dout_init(const drv_dout_cfg_t *cfg);
 esp_err_t drv_dout_set(uint8_t channel, bool value);
 bool drv_dout_get(uint8_t channel);
+uint32_t drv_dout_get_bitmap(void);
+esp_err_t drv_dout_write_bitmap(uint32_t bitmap);
 
 #endif

@@ -1,5 +1,6 @@
 idf_component_register(
     SRCS "src/drv_din.c"
     INCLUDE_DIRS "include"
-    REQUIRES driver common
+    REQUIRES common
+    PRIV_REQUIRES esp_driver_gpio
 )

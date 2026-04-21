@@ -16,5 +16,6 @@ typedef struct {
 esp_err_t drv_din_init(const drv_din_cfg_t *cfg);
 esp_err_t drv_din_update(void);
 bool drv_din_get(uint8_t channel);
+uint32_t drv_din_get_bitmap(void);
 
 #endif
