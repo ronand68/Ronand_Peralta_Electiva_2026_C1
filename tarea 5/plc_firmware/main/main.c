@@ -14,14 +14,33 @@
 #include "drv_dout.h"
 #include "drv_energy.h"
 #include "drv_i2c.h"
+#include "drv_lcd.h"
 #include "drv_sdcard.h"
+#include "drv_touch.h"
 #include "drv_usb_device.h"
 #include "ble_config_service.h"
+#include "lvgl_port.h"
 #include "plc_core.h"
+#include "ui_binding.h"
+#include "ui_views.h"
 #include "web_config_service.h"
 #include "wifi_manager.h"
 
 static const char *TAG = "PLC_MAIN";
+
+#define UI_WIDTH             320U
+#define UI_HEIGHT            240U
+#define UI_HANDLER_PERIOD_MS 20U
+
+static void ui_task(void *arg)
+{
+    (void)arg;
+
+    while (1) {
+        (void)lvgl_port_task_handler();
+        vTaskDelay(pdMS_TO_TICKS(UI_HANDLER_PERIOD_MS));
+    }
+}
 
 void app_main(void)
 {
@@ -84,6 +103,28 @@ void app_main(void)
         .max_engineering = { 100.0f, 100.0f }
     };
 
+    drv_lcd_cfg_t lcd_cfg = {
+        .width = UI_WIDTH,
+        .height = UI_HEIGHT,
+        .rotation = 0,
+        .double_buffer = true
+    };
+
+    drv_touch_cfg_t touch_cfg = {
+        .width = UI_WIDTH,
+        .height = UI_HEIGHT,
+        .swap_xy = false,
+        .mirror_x = false,
+        .mirror_y = false
+    };
+
+    lvgl_port_cfg_t lvgl_cfg = {
+        .hor_res = UI_WIDTH,
+        .ver_res = UI_HEIGHT,
+        .rotation = 0,
+        .backlight_percent = 70
+    };
+
     drv_usb_device_cfg_t usb_cfg = {
         .device_class = USB_DEVICE_CLASS_COMPOSITE,
         .enable_cdc = true,
@@ -124,6 +165,8 @@ void app_main(void)
     wifi_manager_status_t wifi_status = {0};
     web_config_service_status_t web_status = {0};
     ble_config_service_status_t ble_status = {0};
+    char uptime_str[16] = {0};
+    const char *ui_ip_text = "TODO_VERIFY";
 
     ESP_LOGI(TAG, "==== PLC start ====");
 
@@ -134,6 +177,8 @@ void app_main(void)
     ESP_ERROR_CHECK(drv_energy_init(&energy_cfg));
     ESP_ERROR_CHECK(drv_ao_4_20ma_init(&ao_420_cfg));
     ESP_ERROR_CHECK(drv_ao_0_10v_init(&ao_010_cfg));
+    ESP_ERROR_CHECK(drv_lcd_init(&lcd_cfg));
+    ESP_ERROR_CHECK(drv_touch_init(&touch_cfg));
     ESP_ERROR_CHECK(drv_usb_device_init(&usb_cfg));
     ESP_ERROR_CHECK(drv_sdcard_init(&sdcard_cfg));
     ESP_ERROR_CHECK(wifi_manager_init(&wifi_cfg));
@@ -147,8 +192,17 @@ void app_main(void)
     ESP_ERROR_CHECK(ble_config_service_start());
 
     ESP_ERROR_CHECK(plc_core_init());
+    ESP_ERROR_CHECK(ui_binding_init());
+    ESP_ERROR_CHECK(lvgl_port_init(&lvgl_cfg));
+    ESP_ERROR_CHECK(lvgl_port_lock(100U));
+    ESP_ERROR_CHECK(ui_views_create_all());
+    ESP_ERROR_CHECK(ui_views_show_home());
+    lvgl_port_unlock();
+    xTaskCreate(ui_task, "ui_task", 4096, NULL, 4, NULL);
 
     while (1) {
+        uint32_t uptime_seconds = (uint32_t)(xTaskGetTickCount() / configTICK_RATE_HZ);
+
         ESP_ERROR_CHECK(plc_core_update());
         ESP_ERROR_CHECK(plc_core_get_snapshot(&snap));
         ESP_ERROR_CHECK(drv_usb_device_get_status(&usb_status));
@@ -156,6 +210,29 @@ void app_main(void)
         ESP_ERROR_CHECK(wifi_manager_get_status(&wifi_status));
         ESP_ERROR_CHECK(web_config_service_get_status(&web_status));
         ESP_ERROR_CHECK(ble_config_service_get_status(&ble_status));
+
+        snprintf(uptime_str, sizeof(uptime_str), "%02" PRIu32 ":%02" PRIu32 ":%02" PRIu32,
+                 uptime_seconds / 3600U,
+                 (uptime_seconds / 60U) % 60U,
+                 uptime_seconds % 60U);
+        if (wifi_status.ap_active) {
+            ui_ip_text = "TODO_VERIFY_AP";
+        } else if (wifi_status.sta_connected) {
+            ui_ip_text = "TODO_VERIFY_STA";
+        } else {
+            ui_ip_text = "NO LINK";
+        }
+
+        ESP_ERROR_CHECK(ui_binding_update_snapshot(&snap));
+        ESP_ERROR_CHECK(ui_binding_set_runtime_text("PLC ESP32-S3", ui_ip_text, uptime_str));
+        ESP_ERROR_CHECK(ui_binding_set_comm_status(wifi_status.sta_connected || wifi_status.ap_active,
+                                                  web_status.running,
+                                                  false,
+                                                  false));
+        ESP_ERROR_CHECK(ui_binding_set_alarm_count(0U));
+        ESP_ERROR_CHECK(lvgl_port_lock(50U));
+        ESP_ERROR_CHECK(ui_views_refresh());
+        lvgl_port_unlock();
 
         ESP_LOGI(TAG,
                  "DI=0x%08" PRIX32
